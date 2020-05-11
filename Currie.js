@@ -17,4 +17,5 @@ function add() {
     return _adder;
 }
 
-add(3)(6)(7);
+const currie=add(3)(6)(7);
+console.log(currie)
