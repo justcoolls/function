@@ -1,14 +1,12 @@
-function sort(arr) {
-    const len = arr.length;
-    for (let i = 0; i < len - 1; i++) {
-        for (let j = 1; j < len-1-i; j++) {
-            if (arr[j] > arr[j+1]) {
-                let temp=arr[j+1];
-                arr[j+1]=arr[j];
-                arr[j]=temp;
-            }
-        }
+var longestCommonPrefix = function(s) {
+    let len=s.length
+    for(let i=0;i<len;i++){
+        s=s.replace("()","")
+        s=s.replace("{}","")
+        s=s.replace("[]","")
     }
-    console.log(arr);
-}
-sort([2,5,7,3,7,4,5,9])
+    console.log(s.length)
+    return s.length===0?true:false;
+
+};
+longestCommonPrefix("()")
