@@ -19,7 +19,7 @@ Event.prototype.emit = function (type, ...arg) {
 };
 Event.prototype.remove=function(type,fn){
     if(fn){
-        if(this.event[type]){
+        if(this.event[type].length){
             this.event[type].splice(fn,1)
         }else {
             delete  this.event[type];

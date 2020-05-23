@@ -11,6 +11,7 @@ function  max(str) {
             obj[str[i]]=1
         }
     }
+    //
     for ( let i in obj) {
 
         if(obj[i]>=num){
