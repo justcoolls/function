@@ -1,3 +1,4 @@
+
 let obj = {1:222, 2:123, 5:888};
 obj.length = 12;
 let _obj = Array.from(obj).slice(1);
@@ -15,3 +16,5 @@ function fun(nums1,nums2){
     console.log(numList) ;
 }
 fun(nums1,nums2)
+
+
