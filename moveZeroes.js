@@ -1,4 +1,3 @@
-
 var moveZeroes = function(nums) {
     let k=0;
     for(let i=0;i<nums.length;i++){
@@ -12,4 +11,4 @@ var moveZeroes = function(nums) {
     console.log(nums)
 };
 let nums=[4,0,2,0,1,1,1]
-moveZeroes(nums)
+
